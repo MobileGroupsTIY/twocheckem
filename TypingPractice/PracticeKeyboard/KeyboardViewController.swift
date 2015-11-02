@@ -61,7 +61,6 @@ class KeyboardViewController: UIInputViewController {
         PARTY : "party"
     ]
     
-//    let phraseArray:[[String:String]] = [[POO:POO],[SCARY:POO],[SAD:POO],[ANGRY: POO], [HAPPY: POO], [LOVE: POO], [PARTY: POO]]
     let phraseDictionary = [
         
         [POO : POO] : "big poo",
@@ -70,11 +69,15 @@ class KeyboardViewController: UIInputViewController {
         [ANGRY : POO] : "angry poo",
         [HAPPY : POO] : "happy poo",
         [LOVE : POO] : "love poo",
-        [PARTY : POO] : "party poo"
-    
-    
+        [PARTY : POO] : "party poo",
+        
+        [SCARY: PARTY] : "scary party",
+        [SAD: PARTY] : "sad party",
+        [ANGRY: PARTY] : "angry party",
+        [HAPPY: PARTY] : "happy party",
+        [LOVE : PARTY] : "love party",
+        [PARTY : PARTY] : "big party",
     ]
-    
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
