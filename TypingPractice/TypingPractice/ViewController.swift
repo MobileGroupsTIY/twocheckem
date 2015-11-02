@@ -9,9 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
-    
-    var emojiArray = ["💩", "😱", "😭", "😤", "😄", "😍", "🎉"]
-
 
     @IBOutlet weak var practiceTextField: UITextField!
     @IBOutlet weak var practiceLabel: UILabel!

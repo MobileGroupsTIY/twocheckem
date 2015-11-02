@@ -17,6 +17,8 @@ private let LOVE = "😍"
 private let PARTY = "🎉"
 private let DEFAULT = ""
 
+typealias Phrases = [String:String]
+
 class KeyboardViewController: UIInputViewController {
 
     @IBOutlet var nextKeyboardButton: UIButton!
@@ -24,19 +26,19 @@ class KeyboardViewController: UIInputViewController {
     @IBAction func touchedEmoji(button: UIButton) {
         guard let text = button.titleLabel?.text else { return }
         switch text {
-        case POO:
+        case emojiArray[0]:
             textDocumentProxy.insertText(emojiDictionary[POO]!)
-        case SCARY:
+        case emojiArray[1]:
             textDocumentProxy.insertText(emojiDictionary[SCARY]!)
-        case SAD:
+        case emojiArray[2]:
             textDocumentProxy.insertText(emojiDictionary[SAD]!)
-        case ANGRY:
+        case emojiArray[3]:
             textDocumentProxy.insertText(emojiDictionary[ANGRY]!)
-        case HAPPY:
+        case emojiArray[4]:
             textDocumentProxy.insertText(emojiDictionary[HAPPY]!)
-        case LOVE:
+        case emojiArray[5]:
             textDocumentProxy.insertText(emojiDictionary[LOVE]!)
-        case PARTY:
+        case emojiArray[6]:
             textDocumentProxy.insertText(emojiDictionary[PARTY]!)
         default:
             textDocumentProxy.insertText(DEFAULT)
@@ -45,7 +47,11 @@ class KeyboardViewController: UIInputViewController {
         
     }
     
-    var emojiDictionary: [String:String] = [
+    let emojiArray = [POO, SCARY, SAD, ANGRY, HAPPY, LOVE, PARTY]
+    
+
+    
+    let emojiDictionary: [String:String] = [
         POO : "poo",
         SCARY: "scary",
         SAD : "sad",
@@ -54,6 +60,21 @@ class KeyboardViewController: UIInputViewController {
         LOVE: "love",
         PARTY : "party"
     ]
+    
+//    let phraseArray:[[String:String]] = [[POO:POO],[SCARY:POO],[SAD:POO],[ANGRY: POO], [HAPPY: POO], [LOVE: POO], [PARTY: POO]]
+    let phraseDictionary = [
+        
+        [POO : POO] : "big poo",
+        [SCARY : POO] : "scary poo",
+        [SAD:POO] : "sad poo",
+        [ANGRY : POO] : "angry poo",
+        [HAPPY : POO] : "happy poo",
+        [LOVE : POO] : "love poo",
+        [PARTY : POO] : "party poo"
+    
+    
+    ]
+    
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
