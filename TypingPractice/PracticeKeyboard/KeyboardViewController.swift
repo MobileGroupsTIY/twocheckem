@@ -8,10 +8,53 @@
 
 import UIKit
 
+private let POO = "💩"
+private let SCARY = "😱"
+private let SAD = "😭"
+private let ANGRY = "😤"
+private let HAPPY = "😀"
+private let LOVE = "😍"
+private let PARTY = "🎉"
+private let DEFAULT = ""
+
 class KeyboardViewController: UIInputViewController {
 
     @IBOutlet var nextKeyboardButton: UIButton!
 
+    @IBAction func touchedEmoji(button: UIButton) {
+        guard let text = button.titleLabel?.text else { return }
+        switch text {
+        case POO:
+            textDocumentProxy.insertText(emojiDictionary[POO]!)
+        case SCARY:
+            textDocumentProxy.insertText(emojiDictionary[SCARY]!)
+        case SAD:
+            textDocumentProxy.insertText(emojiDictionary[SAD]!)
+        case ANGRY:
+            textDocumentProxy.insertText(emojiDictionary[ANGRY]!)
+        case HAPPY:
+            textDocumentProxy.insertText(emojiDictionary[HAPPY]!)
+        case LOVE:
+            textDocumentProxy.insertText(emojiDictionary[LOVE]!)
+        case PARTY:
+            textDocumentProxy.insertText(emojiDictionary[PARTY]!)
+        default:
+            textDocumentProxy.insertText(DEFAULT)
+            
+        }
+        
+    }
+    
+    var emojiDictionary: [String:String] = [
+        POO : "poo",
+        SCARY: "scary",
+        SAD : "sad",
+        ANGRY: "angry",
+        HAPPY: "happy",
+        LOVE: "love",
+        PARTY : "party"
+    ]
+    
     override func updateViewConstraints() {
         super.updateViewConstraints()
     

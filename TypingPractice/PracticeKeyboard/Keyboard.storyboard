@@ -24,36 +24,57 @@
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="💩"/>
+                                        <connections>
+                                            <action selector="touchedEmoji:" destination="Er8-ZA-5c4" eventType="touchUpInside" id="ZEz-Jg-zpf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beL-dS-hDe">
                                         <rect key="frame" x="80" y="0.0" width="80" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="😱"/>
+                                        <connections>
+                                            <action selector="touchedEmoji:" destination="Er8-ZA-5c4" eventType="touchUpInside" id="eyS-GM-0UJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ox-jh-6M6">
                                         <rect key="frame" x="160" y="0.0" width="80" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="😭"/>
+                                        <connections>
+                                            <action selector="touchedEmoji:" destination="Er8-ZA-5c4" eventType="touchUpInside" id="yjL-bG-OQr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jr-SD-wcg">
                                         <rect key="frame" x="240" y="0.0" width="80" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="😤"/>
+                                        <connections>
+                                            <action selector="touchedEmoji:" destination="Er8-ZA-5c4" eventType="touchUpInside" id="J0o-8f-WEL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBP-Oh-MaZ">
                                         <rect key="frame" x="320" y="0.0" width="80" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="😀"/>
+                                        <connections>
+                                            <action selector="touchedEmoji:" destination="Er8-ZA-5c4" eventType="touchUpInside" id="rXf-lJ-S8T"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRC-Ea-mOP">
                                         <rect key="frame" x="400" y="0.0" width="80" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="😍"/>
+                                        <connections>
+                                            <action selector="touchedEmoji:" destination="Er8-ZA-5c4" eventType="touchUpInside" id="sHm-8u-f1i"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usN-uX-eK3">
                                         <rect key="frame" x="480" y="0.0" width="80" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="🎉"/>
+                                        <connections>
+                                            <action selector="touchedEmoji:" destination="Er8-ZA-5c4" eventType="touchUpInside" id="mZj-4H-MWX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
