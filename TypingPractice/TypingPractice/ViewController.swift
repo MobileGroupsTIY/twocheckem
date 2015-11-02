@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var practiceTextField: UITextField!
     @IBOutlet weak var practiceLabel: UILabel!
@@ -23,6 +23,19 @@ class ViewController: UIViewController {
 
     }
 
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        
+        return true
+    
+    }
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        return true
+        
+        
+    }
+
 
 }
+
 
