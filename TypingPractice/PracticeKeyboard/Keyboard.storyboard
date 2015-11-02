@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Er8-ZA-5c4">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Keyboard View Controller-->
+        <scene sceneID="V0f-7U-8Qu">
+            <objects>
+                <viewController id="Er8-ZA-5c4" customClass="KeyboardViewController" customModule="PracticeKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="akM-K8-Nnv"/>
+                        <viewControllerLayoutGuide type="bottom" id="ICG-fe-XCH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TA9-WK-7xD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OUK-La-th5">
+                                <rect key="frame" x="20" y="103" width="560" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gw-Bl-s3Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="💩"/>
+                                        <connections>
+                                            <action selector="touchedEmoji:" destination="Er8-ZA-5c4" eventType="touchUpInside" id="ZEz-Jg-zpf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beL-dS-hDe">
+                                        <rect key="frame" x="80" y="0.0" width="80" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="😱"/>
+                                        <connections>
+                                            <action selector="touchedEmoji:" destination="Er8-ZA-5c4" eventType="touchUpInside" id="eyS-GM-0UJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ox-jh-6M6">
+                                        <rect key="frame" x="160" y="0.0" width="80" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="😭"/>
+                                        <connections>
+                                            <action selector="touchedEmoji:" destination="Er8-ZA-5c4" eventType="touchUpInside" id="yjL-bG-OQr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jr-SD-wcg">
+                                        <rect key="frame" x="240" y="0.0" width="80" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="😤"/>
+                                        <connections>
+                                            <action selector="touchedEmoji:" destination="Er8-ZA-5c4" eventType="touchUpInside" id="J0o-8f-WEL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBP-Oh-MaZ">
+                                        <rect key="frame" x="320" y="0.0" width="80" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="😀"/>
+                                        <connections>
+                                            <action selector="touchedEmoji:" destination="Er8-ZA-5c4" eventType="touchUpInside" id="rXf-lJ-S8T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRC-Ea-mOP">
+                                        <rect key="frame" x="400" y="0.0" width="80" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="😍"/>
+                                        <connections>
+                                            <action selector="touchedEmoji:" destination="Er8-ZA-5c4" eventType="touchUpInside" id="sHm-8u-f1i"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usN-uX-eK3">
+                                        <rect key="frame" x="480" y="0.0" width="80" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="🎉"/>
+                                        <connections>
+                                            <action selector="touchedEmoji:" destination="Er8-ZA-5c4" eventType="touchUpInside" id="mZj-4H-MWX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="EPh-mb-fb6"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.96862745098039216" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OUK-La-th5" firstAttribute="leading" secondItem="TA9-WK-7xD" secondAttribute="leadingMargin" id="6Pz-8S-E03"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OUK-La-th5" secondAttribute="trailing" id="BuL-oR-NaD"/>
+                            <constraint firstItem="OUK-La-th5" firstAttribute="top" secondItem="akM-K8-Nnv" secondAttribute="bottom" constant="83" id="NJB-tM-2Yj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aVo-cd-dwl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237" y="426"/>
+        </scene>
+    </scenes>
+</document>
