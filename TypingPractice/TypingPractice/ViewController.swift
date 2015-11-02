@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var practiceTextField: UITextField!
+    @IBOutlet weak var practiceLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -23,14 +23,30 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRB-by-p3p">
+                                <rect key="frame" x="20" y="58" width="560" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="h91-cs-NTF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="piR-Yy-r6D" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Fgx-op-6Zl"/>
                             <constraint firstItem="piR-Yy-r6D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bZa-AL-HXY"/>
+                            <constraint firstItem="NRB-by-p3p" firstAttribute="top" secondItem="piR-Yy-r6D" secondAttribute="bottom" constant="8" id="jVc-qq-CwL"/>
+                            <constraint firstItem="NRB-by-p3p" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nLH-ap-FBF"/>
+                            <constraint firstItem="NRB-by-p3p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ncT-to-xjR"/>
                             <constraint firstItem="piR-Yy-r6D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ySx-Do-VIr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="practiceLabel" destination="NRB-by-p3p" id="h3N-rn-fE1"/>
+                        <outlet property="practiceTextField" destination="piR-Yy-r6D" id="9Up-Qp-Itk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
