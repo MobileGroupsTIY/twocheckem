@@ -26,7 +26,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func fillPhrase(){
         
-        practiceLabel.text = "Scary Poop"
+        practiceLabel.text = "scary poo"
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,6 +37,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        
+        
         
         //we need to test the full textfield string == label string #1's need an array of phrases #2 [emoji:words] emoji's as keys and words as values!
         
